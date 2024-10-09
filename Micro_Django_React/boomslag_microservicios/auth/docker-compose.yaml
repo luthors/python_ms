@@ -1,0 +1,33 @@
+#version: '3.8'
+services:
+  # Django App 
+  backend_auth:
+    container_name: boomslag_ms_auth
+    build: .
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+      - redis
+  # PostgreSQL
+   # Database (PostgreSQL)
+  db:
+    image: postgres
+    container_name: django_auth_api_postgresql
+    restart: always
+    environment:
+      POSTGRES_DB=: solopython_auth_db
+      POSTGRES_USER: "solopython"
+      POSTGRES_PASSWORD: "postgres"
+    ports:
+      - "5432:5432"
+    volumes:
+      - .dbdata:/var/lib/postgresql
+  #Redis
+  redis:
+    image: redis
+    container_name: django_auth_api_redis
+    ports:
+      - 6379:6379

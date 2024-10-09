@@ -1,0 +1,94 @@
+{
+  "name": "container",
+  "version": "1.0.0",
+  "babelMacros": {
+    "twin": {
+      "preset": "styled-components",
+      "hasLogColors": false
+    }
+  },
+  "scripts": {
+    "dev": "webpack serve --config config/webpack.dev.js",
+    "build": "rimraf dist && webpack --config config/webpack.prod.js",
+    "format": "prettier --write \"scr/**/*.{js,jsx,ts,tsx}\" \"config/*.{js,jsx,ts,tsx}\" \""
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.7",
+    "@heroicons/react": "^2.0.13",
+    "@reduxjs/toolkit": "^1.9.1",
+    "@tippyjs/react": "^4.2.6",
+    "axios": "^1.2.2",
+    "dompurify": "^2.4.3",
+    "framer-motion": "^6.5.1",
+    "react": "^17.0.1",
+    "react-click-outside-hook": "^1.1.1",
+    "react-dom": "^17.0.1",
+    "react-icons": "^4.7.1",
+    "react-is": "^17.0.1",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^5.2.0",
+    "react-slugify": "^3.0.0",
+    "react-spinners": "^0.13.7",
+    "redux": "^4.2.0",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.4.2",
+    "styled-components": "^5.3.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
+    "@babel/preset-typescript": "^7.12.1",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/line-clamp": "^0.4.2",
+    "@tailwindcss/typography": "^0.5.8",
+    "@types/react": "^17.0.1",
+    "@types/react-dom": "^17.0.1",
+    "@types/styled-components": "^5.1.26",
+    "autoprefixer": "^10.4.13",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-macros": "^3.1.0",
+    "babel-plugin-styled-components": "^2.0.7",
+    "babel-plugin-twin": "^1.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.0.0",
+    "dotenv-webpack": "^8.0.1",
+    "eslint": "^8.31.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-webpack-plugin": "^3.2.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.5.0",
+    "postcss": "^8.4.20",
+    "postcss-cli": "^10.1.0",
+    "postcss-loader": "^7.0.2",
+    "prettier": "^2.8.2",
+    "prettier-plugin-tailwindcss": "^0.2.1",
+    "prettier-webpack-plugin": "^1.2.0",
+    "rimraf": "^3.0.2",
+    "sass": "^1.57.1",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^2.0.0",
+    "tailwind-styled-components": "^2.2.0",
+    "tailwindcss": "^3.2.4",
+    "twin.macro": "^3.1.0",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.1.0",
+    "webpack-dev-server": "^4.11.1",
+    "webpack-merge": "^5.8.0"
+  }
+}
+    
+
+
+    
+    
+    
